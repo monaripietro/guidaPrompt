@@ -1,5 +1,22 @@
+{%- assign nav_key = "full" -%}
+{%- if page.url contains "/docs/08-templates/" -%}
+  {%- assign nav_key = "templates" -%}
+{%- elsif page.url contains "/docs/" -%}
+  {%- assign nav_key = "docs" -%}
+{%- elsif page.url contains "/templates/" -%}
+  {%- assign nav_key = "templates" -%}
+{%- elsif page.url contains "/exercises/base/" -%}
+  {%- assign nav_key = "exercises_base" -%}
+{%- elsif page.url contains "/exercises/intermedio/" -%}
+  {%- assign nav_key = "exercises_intermedio" -%}
+{%- elsif page.url contains "/exercises/avanzato/" -%}
+  {%- assign nav_key = "exercises_avanzato" -%}
+{%- elsif page.url contains "/exercises/" -%}
+  {%- assign nav_key = "exercises_all" -%}
+{%- endif -%}
+
 <nav class="side-nav">
-  {% for section in site.data.nav %}
+  {% for section in site.data.nav[nav_key] %}
   <div class="nav-section">
     <div class="nav-title">{{ section.title }}</div>
     <ul>
@@ -10,4 +27,3 @@
   </div>
   {% endfor %}
 </nav>
-
