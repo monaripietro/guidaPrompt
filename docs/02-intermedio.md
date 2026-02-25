@@ -33,7 +33,7 @@ Ora etichetta:
 1) ...
 ```
 
-Esercizio: `exercises/intermedio/esercizio-01-few-shot.md`.
+Esercizio: [Few-shot]({{ site_base }}/exercises/intermedio/esercizio-01-few-shot/).
 
 ## 2) Chain-of-Thought (CoT) / Step-by-step
 
@@ -52,7 +52,7 @@ Poi:
 3) verifica con un controllo finale
 ```
 
-Esercizio: `exercises/intermedio/esercizio-03-cot-rationale.md`.
+Esercizio: [CoT rationale]({{ site_base }}/exercises/intermedio/esercizio-03-cot-rationale/).
 
 ## 3) Decomposition (scomposizione)
 
@@ -70,7 +70,7 @@ Pattern:
 3) Ricomponi in un output finale unico.
 ```
 
-Esercizio: `exercises/intermedio/esercizio-02-decomposizione.md`.
+Esercizio: [Decomposizione]({{ site_base }}/exercises/intermedio/esercizio-02-decomposizione/).
 
 ## 4) Rubric prompting (criteri di valutazione)
 
@@ -88,7 +88,7 @@ Poi valuta con questa rubric:
 Se un punteggio è <2, migliora e ripeti una volta.
 ```
 
-Esercizio: `exercises/intermedio/esercizio-04-rubric.md`.
+Esercizio: [Rubric]({{ site_base }}/exercises/intermedio/esercizio-04-rubric/).
 
 ## 5) Negative prompting (cosa NON fare)
 
@@ -107,8 +107,8 @@ Vincoli:
 - Se manca info, fai domande.
 ```
 
-Esercizio: `exercises/intermedio/esercizio-05-negative-prompting.md`.
+Esercizio: [Negative prompting]({{ site_base }}/exercises/intermedio/esercizio-05-negative-prompting/).
 
 ## Esercizi (Intermedio)
 
-Vai a `exercises/intermedio/README.md`.
+Vai a [Esercizi intermedio]({{ site_base }}/exercises/intermedio/).

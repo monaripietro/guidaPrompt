@@ -3,43 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include base.html %}
     <title>
       {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
     </title>
     <meta name="description" content="{{ site.description | escape }}" />
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ site_base }}/assets/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <div class="brand">
-          <a class="brand-link" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <a class="brand-link" href="{{ site_base }}/">{{ site.title }}</a>
           <div class="brand-subtitle">{{ site.description }}</div>
         </div>
         <nav class="nav">
-          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ site_base }}/">Home</a>
           {% capture u %}{% link docs/00-indice.md %}{% endcapture %}
-          <a href="{{ u | relative_url }}">Indice</a>
+          <a href="{{ site_base }}{{ u }}">Indice</a>
           {% capture u %}{% link docs/07-mappa-problema-tecnica.md %}{% endcapture %}
-          <a href="{{ u | relative_url }}">Mappa</a>
+          <a href="{{ site_base }}{{ u }}">Mappa</a>
           {% capture u %}{% link docs/05-debugging-checklist.md %}{% endcapture %}
-          <a href="{{ u | relative_url }}">Debug</a>
+          <a href="{{ site_base }}{{ u }}">Debug</a>
           {% capture u %}{% link docs/08-templates.md %}{% endcapture %}
-          <a href="{{ u | relative_url }}">Template</a>
+          <a href="{{ site_base }}{{ u }}">Template</a>
           {% capture u %}{% link exercises/base/README.md %}{% endcapture %}
-          <a href="{{ u | relative_url }}">Esercizi</a>
+          <a href="{{ site_base }}{{ u }}">Esercizi</a>
+          {% capture u %}{% link repo.md %}{% endcapture %}
+          <a href="{{ site_base }}{{ u }}">Repo</a>
         </nav>
       </div>
     </header>
 
-    <main class="container">
-      {{ content }}
-    </main>
+    <div class="page container">
+      <aside class="sidebar" aria-label="Navigazione sito">
+        {% include nav.html %}
+      </aside>
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
 
     <footer class="site-footer">
       <div class="container">
         <div class="muted">
-          Contenuti su GitHub · Licenza MIT
+          Contenuti su GitHub · {% capture u %}{% link license.md %}{% endcapture %}<a href="{{ site_base }}{{ u }}">Licenza MIT</a>
         </div>
       </div>
     </footer>

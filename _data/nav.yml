@@ -1,0 +1,77 @@
+- title: Home
+  items:
+    - title: Home
+      url: /
+- title: Documenti
+  items:
+    - title: Indice
+      url: /docs/00-indice/
+    - title: Livello Base
+      url: /docs/01-base/
+    - title: Livello Intermedio
+      url: /docs/02-intermedio/
+    - title: Livello Avanzato
+      url: /docs/03-avanzato/
+    - title: Modelli LLM/LRM
+      url: /docs/04-modelli-llm-lrm-ibridi/
+    - title: Debugging checklist
+      url: /docs/05-debugging-checklist/
+    - title: Riferimenti
+      url: /docs/06-riferimenti/
+    - title: Mappa problema → tecnica
+      url: /docs/07-mappa-problema-tecnica/
+    - title: Template
+      url: /docs/08-templates/
+- title: Esercizi Base
+  items:
+    - title: Indice esercizi base
+      url: /exercises/base/
+    - title: Esercizio 01 — Fondamentali
+      url: /exercises/base/esercizio-01-fondamentali/
+    - title: Esercizio 02 — Formato Markdown
+      url: /exercises/base/esercizio-02-formato-markdown/
+    - title: Esercizio 03 — Formato XML
+      url: /exercises/base/esercizio-03-formato-xml/
+- title: Esercizi Intermedio
+  items:
+    - title: Indice esercizi intermedio
+      url: /exercises/intermedio/
+    - title: Esercizio 01 — Few-shot
+      url: /exercises/intermedio/esercizio-01-few-shot/
+    - title: Esercizio 02 — Decomposizione
+      url: /exercises/intermedio/esercizio-02-decomposizione/
+    - title: Esercizio 03 — CoT rationale
+      url: /exercises/intermedio/esercizio-03-cot-rationale/
+    - title: Esercizio 04 — Rubric
+      url: /exercises/intermedio/esercizio-04-rubric/
+    - title: Esercizio 05 — Negative prompting
+      url: /exercises/intermedio/esercizio-05-negative-prompting/
+- title: Esercizi Avanzato
+  items:
+    - title: Indice esercizi avanzato
+      url: /exercises/avanzato/
+    - title: Esercizio 01 — Self-consistency
+      url: /exercises/avanzato/esercizio-01-self-consistency/
+    - title: Esercizio 02 — Tree-of-Thought
+      url: /exercises/avanzato/esercizio-02-tree-of-thought/
+    - title: Esercizio 03 — Robustezza injection
+      url: /exercises/avanzato/esercizio-03-robustezza-injection/
+    - title: Esercizio 04 — Refine
+      url: /exercises/avanzato/esercizio-04-refine/
+    - title: Esercizio 05 — Non risolvibile
+      url: /exercises/avanzato/esercizio-05-non-risolvibile/
+- title: Template
+  items:
+    - title: Template prompt (Markdown)
+      url: /templates/markdown-template/
+    - title: Template XML (download)
+      url: /templates/xml-template.xml
+- title: Repo
+  items:
+    - title: README
+      url: /repo/
+    - title: Contribuire
+      url: /contribuire/
+    - title: Licenza
+      url: /license/
+

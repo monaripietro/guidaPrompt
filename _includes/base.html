@@ -1,0 +1,13 @@
+{% assign site_base = site.baseurl %}
+{% if site_base == nil %}
+  {% assign site_base = "" %}
+{% endif %}
+
+{%- comment -%}
+  GitHub Pages project sites live under "/<repo>" (baseurl).
+  If `baseurl` is not set in _config.yml, fall back to `site.github.baseurl`.
+{%- endcomment -%}
+{% if site_base == "" and site.github and site.github.baseurl %}
+  {% assign site_base = site.github.baseurl %}
+{% endif %}
+

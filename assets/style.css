@@ -18,7 +18,7 @@ body{
   color:var(--text);
 }
 
-.container{max-width:980px;margin:0 auto;padding:0 16px}
+.container{max-width:1120px;margin:0 auto;padding:0 16px}
 
 .site-header{
   position:sticky;top:0;
@@ -44,7 +44,19 @@ body{
 }
 .nav a:hover{color:var(--text);border-color:var(--border);background:rgba(255,255,255,.04)}
 
-main.container{padding:24px 16px 40px}
+.page{display:grid;grid-template-columns:260px minmax(0,1fr);gap:24px;padding:24px 0 40px}
+.sidebar{position:sticky;top:84px;height:calc(100vh - 96px);overflow:auto}
+.sidebar .nav-section{padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.02);margin-bottom:12px}
+.sidebar .nav-title{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.sidebar ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.sidebar a{color:var(--text);text-decoration:none;font-size:.95rem}
+.sidebar a:hover{color:var(--link)}
+.content{min-width:0}
+
+@media (max-width: 980px){
+  .page{grid-template-columns:1fr}
+  .sidebar{position:relative;top:auto;height:auto}
+}
 
 h1,h2,h3{line-height:1.2}
 h1{font-size:2rem;margin:8px 0 16px}
@@ -87,4 +99,3 @@ tr:last-child td{border-bottom:none}
   color:var(--muted);
 }
 .muted{color:var(--muted)}
-

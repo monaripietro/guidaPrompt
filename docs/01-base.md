@@ -41,14 +41,14 @@ Pro:
 - leggibile;
 - facile separare sezioni con heading e code fence.
 
-Template: vedi `templates/markdown-template.md`.
+Template: vedi [Template prompt (Markdown)]({{ site_base }}/templates/markdown-template/).
 
 ### B) XML (consigliato per “contratti” più rigidi)
 Pro:
 - sezioni esplicite;
 - utile quando vuoi un output/struttura molto controllata.
 
-Template: vedi `templates/xml-template.xml`.
+Template: vedi [Template XML]({{ site_base }}/templates/xml-template.xml).
 
 ## 4) Regole utili (Tips & Tricks)
 
@@ -67,4 +67,4 @@ Template: vedi `templates/xml-template.xml`.
 
 ## Esercizi (Base)
 
-Vai a `exercises/base/README.md`.
+Vai a [Esercizi base]({{ site_base }}/exercises/base/).

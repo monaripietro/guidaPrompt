@@ -1,0 +1,13 @@
+<nav class="side-nav">
+  {% for section in site.data.nav %}
+  <div class="nav-section">
+    <div class="nav-title">{{ section.title }}</div>
+    <ul>
+      {% for item in section.items %}
+      <li><a href="{{ site_base }}{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</nav>
+

@@ -19,6 +19,8 @@ Questo repository include i file minimi per pubblicare un sito con Jekyll via Gi
 - GitHub: `Settings → Pages → Build and deployment → Deploy from a branch`
 - Branch: `main`
 - Folder: `/(root)`
+  
+Nota: i link/CSS funzionano anche su GitHub Pages “project” (`https://<user>.github.io/<repo>/`) senza dover impostare `baseurl` manualmente.
 
 ## Struttura repository
 
