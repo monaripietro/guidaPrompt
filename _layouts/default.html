@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+    </title>
+    <meta name="description" content="{{ site.description | escape }}" />
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <a class="brand-link" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <div class="brand-subtitle">{{ site.description }}</div>
+        </div>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          {% capture u %}{% link docs/00-indice.md %}{% endcapture %}
+          <a href="{{ u | relative_url }}">Indice</a>
+          {% capture u %}{% link docs/07-mappa-problema-tecnica.md %}{% endcapture %}
+          <a href="{{ u | relative_url }}">Mappa</a>
+          {% capture u %}{% link docs/05-debugging-checklist.md %}{% endcapture %}
+          <a href="{{ u | relative_url }}">Debug</a>
+          {% capture u %}{% link docs/08-templates.md %}{% endcapture %}
+          <a href="{{ u | relative_url }}">Template</a>
+          {% capture u %}{% link exercises/base/README.md %}{% endcapture %}
+          <a href="{{ u | relative_url }}">Esercizi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="muted">
+          Contenuti su GitHub · Licenza MIT
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

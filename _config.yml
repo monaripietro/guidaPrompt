@@ -1,0 +1,12 @@
+title: Prompt Engineering Guide
+description: Guida pratica al prompt engineering (Base, Intermedio, Avanzato) con esercizi.
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+exclude:
+  - .gitignore
+  - LICENSE
+  - CONTRIBUTING.md
+

@@ -1,0 +1,90 @@
+:root{
+  --bg:#0b1020;
+  --panel:#0f1630;
+  --text:#e8ecff;
+  --muted:#aeb8e6;
+  --link:#7aa2ff;
+  --border:rgba(255,255,255,.10);
+  --codebg:rgba(255,255,255,.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height:1.55;
+  background: radial-gradient(1200px 600px at 20% 0%, #141b3a 0%, var(--bg) 55%) fixed;
+  color:var(--text);
+}
+
+.container{max-width:980px;margin:0 auto;padding:0 16px}
+
+.site-header{
+  position:sticky;top:0;
+  background:rgba(11,16,32,.75);
+  border-bottom:1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+.site-header .container{
+  display:flex;gap:16px;align-items:center;justify-content:space-between;
+  padding:14px 16px;
+}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand-link{color:var(--text);text-decoration:none;font-weight:700}
+.brand-subtitle{color:var(--muted);font-size:.9rem}
+
+.nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:6px 10px;
+  border:1px solid transparent;
+  border-radius:999px;
+}
+.nav a:hover{color:var(--text);border-color:var(--border);background:rgba(255,255,255,.04)}
+
+main.container{padding:24px 16px 40px}
+
+h1,h2,h3{line-height:1.2}
+h1{font-size:2rem;margin:8px 0 16px}
+h2{font-size:1.35rem;margin:28px 0 12px}
+h3{font-size:1.1rem;margin:18px 0 8px}
+
+a{color:var(--link)}
+code, pre{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+code{
+  background:var(--codebg);
+  padding:2px 6px;
+  border-radius:6px;
+}
+pre{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  overflow:auto;
+}
+pre code{background:transparent;padding:0}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  display:block;
+}
+thead{background:rgba(255,255,255,.04)}
+th,td{padding:10px 12px;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+
+.site-footer{
+  border-top:1px solid var(--border);
+  padding:20px 0;
+  color:var(--muted);
+}
+.muted{color:var(--muted)}
+

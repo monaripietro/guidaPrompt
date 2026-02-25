@@ -1,0 +1,38 @@
+<!-- Prompt Template (XML) -->
+<prompt>
+  <role>Sei ...</role>
+
+  <goal>...</goal>
+
+  <context>
+    <![CDATA[
+    Incolla qui i dati / testo di input.
+    ]]>
+  </context>
+
+  <instructions>
+    <step>...</step>
+    <step>...</step>
+  </instructions>
+
+  <constraints>
+    <item>...</item>
+    <item>Non inventare dati; se manca info, chiedi chiarimenti.</item>
+  </constraints>
+
+  <output_format>
+    <structure>
+      <section>...</section>
+      <section>...</section>
+    </structure>
+    <style>chiaro, diretto</style>
+  </output_format>
+
+  <quality_bar>
+    <checklist>
+      <item>Copre tutti i requisiti</item>
+      <item>Coerente e senza contraddizioni</item>
+    </checklist>
+  </quality_bar>
+</prompt>
+
