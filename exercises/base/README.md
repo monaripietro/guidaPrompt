@@ -3,6 +3,9 @@ layout: default
 title: Esercizi Base
 ---
 
+{% include base.html %}
+
+
 # Esercizi — Base
 
 Obiettivo: imparare a scrivere prompt con ruolo, task, formato, vincoli e delimitatori.

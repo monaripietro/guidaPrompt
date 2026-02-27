@@ -3,6 +3,9 @@ layout: default
 title: Indice
 ---
 
+{% include base.html %}
+
+
 # Indice
 
 ## Moduli

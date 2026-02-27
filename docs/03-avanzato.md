@@ -3,6 +3,9 @@ layout: default
 title: Livello Avanzato
 ---
 
+{% include base.html %}
+
+
 # Livello Avanzato — Robustezza, esplorazione, diagnosi
 
 Obiettivo: ottenere qualità alta in problemi ambigui e sapere quando fermarsi.

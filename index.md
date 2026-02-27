@@ -23,6 +23,6 @@ Guida pratica al prompt engineering, con teoria + esercizi, divisa in 3 livelli:
 
 ## Esercizi
 
-- {% capture p %}{% link exercises/base/README.md %}{% endcapture %}[Esercizi Base]({{ site_base }}{{ p }})
-- {% capture p %}{% link exercises/intermedio/README.md %}{% endcapture %}[Esercizi Intermedio]({{ site_base }}{{ p }})
-- {% capture p %}{% link exercises/avanzato/README.md %}{% endcapture %}[Esercizi Avanzato]({{ site_base }}{{ p }})
+- [Esercizi Base]({{ site_base }}/exercises/base/)
+- [Esercizi Intermedio]({{ site_base }}/exercises/intermedio/)
+- [Esercizi Avanzato]({{ site_base }}/exercises/avanzato/)

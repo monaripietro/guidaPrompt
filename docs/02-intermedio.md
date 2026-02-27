@@ -3,6 +3,9 @@ layout: default
 title: Livello Intermedio
 ---
 
+{% include base.html %}
+
+
 # Livello Intermedio — Tecniche e strategie “nominabili”
 
 Obiettivo: collegare **problema → tecnica → prompt pattern**.

@@ -3,6 +3,9 @@ layout: default
 title: Esercizi Intermedio
 ---
 
+{% include base.html %}
+
+
 # Esercizi — Intermedio
 
 Obiettivo: usare tecniche “nominabili” per problemi specifici.

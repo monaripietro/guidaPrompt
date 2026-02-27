@@ -3,6 +3,9 @@ layout: default
 title: Livello Base
 ---
 
+{% include base.html %}
+
+
 # Livello Base — Fondamenti del prompt efficace
 
 Obiettivo: passare da “scrivo una domanda” a “scrivo un’istruzione completa e verificabile”.

@@ -3,6 +3,9 @@ layout: default
 title: Esercizi Avanzato
 ---
 
+{% include base.html %}
+
+
 # Esercizi — Avanzato
 
 Obiettivo: aumentare affidabilità e robustezza su problemi ambigui o “rischiosi”.
